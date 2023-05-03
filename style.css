@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./apple.jpg);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    height: 90%;
+    background-color: red;
+    border-radius: 5%;
+    border: 10px solid white;
+    /* all the elements should follow border radius */
+    overflow: hidden;
+}
+
+.header h1,
+.header p {
+    background-color: blueviolet;
+    opacity: 0.8;
+}
+
+.header {
+    width: 100%;
+    height: 33.3%;
+    background-image: url(./apple.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+.middle {
+    width: 100%;
+    height: 33.3%;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    height: calc(100% - 66.6%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+#adder {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#adder img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#middle {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.card {
+    width: 50%;
+    height: 90%;
+    background-color: lightblue;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 7px 0 black;
+}
+
+#photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#photo img {
+    width: 60%;
+    height: 90%;
+    border-radius: 3%;
+}
+
+#data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* li {
+    list-style: none;
+} */
+
+ul {
+    list-style: none;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
